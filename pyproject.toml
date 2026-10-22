@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mtgp"
+version = "0.1.0"
+description = "Montgom Project"
+readme = "readme.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy==2.5.4",
+    "pandas==3.0.6",
+    "scikit-learn==1.9.1",
+    "threadpoolctl>=3.6,<4",
+    "filelock>=3.16,<5",
+    "xgboost>=3.0,<4",
+    "torch>=2.8,<3",
+    "scipy==1.18.1",
+    "seaborn==0.13.2",
+    "matplotlib==3.11.2",
+    "Pillow>=10",
+    "ipykernel",
+    "ipywidgets",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
