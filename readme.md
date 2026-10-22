@@ -77,7 +77,9 @@ Run loader tests with `python -m unittest discover -s tests`.
 ### Local dataset exception
 
 `MCUCXR_0354_1` has a 1024 × 1024 image but 4020 × 4892 masks.
-The loader preserves these arrays and flags the mismatch. For any nonstandard
+The trial loader excludes this patient and prints a skip message each time it
+is encountered. Its sidecars are not counted as orphan files. The excluded ID
+is recorded in `trial.excluded_patient_ids`. For any nonstandard
 image dimensions, `pixel_spacing_mm` and `field_of_view_mm` are `None` because
 the original-image spacing cannot be assumed. Resolve the image/mask geometry
 before using this record for segmentation. Inspect `trial.data`'s `issues`

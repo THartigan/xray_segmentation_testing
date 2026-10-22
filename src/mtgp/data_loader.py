@@ -172,6 +172,10 @@ class Trial:
         images = sorted((self.directory / 'CXR_png').glob('*.png'))
         if not images:
             raise FileNotFoundError(f'No PNG images in {self.directory / "CXR_png"}')
+        self.excluded_patient_ids = [p.stem for p in images if p.stem == 'MCUCXR_0354_1']
+        for patient_id in self.excluded_patient_ids:
+            print(f'Skipping {patient_id}: image and lung mask dimensions do not match.')
+        images = [p for p in images if p.stem not in self.excluded_patient_ids]
         self.patients = [Patient(path, strict=strict) for path in images]
         self.num_patients = len(self.patients)
         self._by_id = {p.patient_id: p for p in self.patients}
@@ -182,7 +186,7 @@ class Trial:
         self.metadata = {'documentation_path': self.directory / README_NAME,
                          'pixel_spacing_mm': (0.0875, 0.0875),
                          'label_mapping': {0: 'normal', 1: 'abnormal'}}
-        image_ids = set(self._by_id)
+        image_ids = set(self._by_id) | set(self.excluded_patient_ids)
         self.orphan_files = []
         for folder, pattern in [('ClinicalReadings', '*.txt'),
                                 ('ManualMask/leftMask', '*.png'),
