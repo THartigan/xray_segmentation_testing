@@ -72,7 +72,49 @@ actual PNG bit depth separately. The abnormal label denotes the dataset class,
 not an inference of active disease from the clinical text. Masks retain the
 provided anatomical left/right names, not viewer-left/viewer-right.
 
-Run loader tests with `python -m unittest discover -s tests`.
+Run package tests with `python -m unittest discover -s tests`.
+
+## Threshold-based lung masks
+
+```python
+from mtgp import SegmentationConfig, segment_lungs
+from mtgp.plotting import plot_segmentation_batch
+
+config = SegmentationConfig(
+    sigma=30, threshold=65, min_valid_intensity=10,
+    opening_radius=100, closing_radius=100, max_invalid_contacts=100,
+)
+result = segment_lungs(trial[0].image, config)
+lung_mask = result.cleaned  # Full-resolution boolean array.
+figures = plot_segmentation_batch(trial[:30], config)
+```
+
+`thresholding.py` owns configuration, normalized Gaussian smoothing and pipeline
+composition. `morphology.py` supplies independently usable mask operations;
+`plotting.py` produces the diagnostic grids without retaining all full-resolution
+results. Call `plt.show()` or save the returned figures yourself. Choose specific
+plots with `stages=("candidate", "opened", "repaired", "cleaned")`.
+
+The order matters: **open → relabel → close each component → fill holes → reject
+boundary components**. Opening cuts thin white connections to boundary strips.
+Closing fills narrow black clefts within each remaining component. Separate
+components do not jointly participate in closing. The output may contain several
+blobs; the pipeline does not select exactly two or force convex shapes.
+
+All radii and Gaussian sigma are in original-image pixels. Increase
+`opening_radius` for wider connections, at the cost of rounding tips and losing
+small fragments. A zero radius disables that operation. Larger closing radii
+repair wider clefts but can distort outlines; repaired regions can still touch.
+Opening may leave detached border remnants, and thick boundary connections may
+survive. Inspect the intermediate masks; these are experimental intensity masks.
+
+`SegmentationResult` exposes `smoothed`, `valid`, `candidate`, `opened`, `repaired`,
+`mask_valid`, and `cleaned`. Invalid pixels do not contribute to Gaussian
+intensities and remain NaN in `smoothed`. Only enclosed invalid holes can be filled;
+exterior invalid areas cannot serve as closing bridges. `mask_valid` includes the
+filled holes for display and boundary checks. Contact tolerance counts distinct
+invalid pixels in an 8-neighbourhood and is inclusive. Image-edge contact always
+rejects a component. The notebook shows each stage with invalid pixels in red.
 
 ### Local dataset exception
 
