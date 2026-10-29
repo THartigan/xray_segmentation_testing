@@ -1,0 +1,745 @@
+{
+  "first_40_passed": true,
+  "previously_failing_case_passed": true,
+  "checks": "Nonempty, single 8-connected seed on each image side; no manual annotations used.",
+  "patients": [
+    {
+      "patient_id": "MCUCXR_0001_0",
+      "left_pixels": 907759,
+      "right_pixels": 1144298,
+      "chest_center": [
+        1725.132408812552,
+        2502.748329512002
+      ],
+      "seed_centroid_columns": [
+        1783.7017831825408,
+        3343.436940377419
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0002_0",
+      "left_pixels": 943751,
+      "right_pixels": 879179,
+      "chest_center": [
+        2019.0245206833786,
+        2408.4233085379083
+      ],
+      "seed_centroid_columns": [
+        1611.9295873593776,
+        3058.7347877963416
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0003_0",
+      "left_pixels": 916398,
+      "right_pixels": 923000,
+      "chest_center": [
+        2390.032355904592,
+        2051.3964135495685
+      ],
+      "seed_centroid_columns": [
+        1343.6189428610712,
+        2781.851534127844
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0004_0",
+      "left_pixels": 359382,
+      "right_pixels": 569770,
+      "chest_center": [
+        1538.10097143192,
+        2029.5044642756986
+      ],
+      "seed_centroid_columns": [
+        1430.059621795193,
+        2721.3304842304788
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0005_0",
+      "left_pixels": 1535126,
+      "right_pixels": 1769215,
+      "chest_center": [
+        2098.11096832946,
+        2012.0135947109761
+      ],
+      "seed_centroid_columns": [
+        970.5245836498111,
+        3112.425162006879
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0006_0",
+      "left_pixels": 876863,
+      "right_pixels": 756785,
+      "chest_center": [
+        2055.4134180159617,
+        2454.3307551864445
+      ],
+      "seed_centroid_columns": [
+        1740.6491036798222,
+        3382.6172479634242
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0008_0",
+      "left_pixels": 775933,
+      "right_pixels": 968548,
+      "chest_center": [
+        2085.643534600475,
+        1948.857439418202
+      ],
+      "seed_centroid_columns": [
+        1100.5487832067975,
+        2785.6266380189727
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0011_0",
+      "left_pixels": 873093,
+      "right_pixels": 999445,
+      "chest_center": [
+        1932.4146056308525,
+        1974.1730082968165
+      ],
+      "seed_centroid_columns": [
+        1179.4834731237108,
+        2706.0623836229106
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0013_0",
+      "left_pixels": 1028375,
+      "right_pixels": 1080966,
+      "chest_center": [
+        2072.0612775608115,
+        2462.786489302408
+      ],
+      "seed_centroid_columns": [
+        1724.6458811231312,
+        3395.2640693601834
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0015_0",
+      "left_pixels": 570623,
+      "right_pixels": 1329968,
+      "chest_center": [
+        2008.864211900044,
+        2439.501442816831
+      ],
+      "seed_centroid_columns": [
+        1571.6397656596387,
+        3594.225206922272
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0016_0",
+      "left_pixels": 605150,
+      "right_pixels": 1061757,
+      "chest_center": [
+        1926.3029821266398,
+        2439.262591409152
+      ],
+      "seed_centroid_columns": [
+        1720.4602098653227,
+        3186.404429638797
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0017_0",
+      "left_pixels": 874404,
+      "right_pixels": 1037300,
+      "chest_center": [
+        1386.2385506122396,
+        2499.686841019739
+      ],
+      "seed_centroid_columns": [
+        1739.755529480652,
+        3138.1816282656896
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0019_0",
+      "left_pixels": 1264214,
+      "right_pixels": 1707350,
+      "chest_center": [
+        1984.7772102206036,
+        2037.9631231746523
+      ],
+      "seed_centroid_columns": [
+        1123.9783177531651,
+        2951.8312285120214
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0020_0",
+      "left_pixels": 1000364,
+      "right_pixels": 1203895,
+      "chest_center": [
+        2065.909325052001,
+        2427.1192885041796
+      ],
+      "seed_centroid_columns": [
+        1596.0045403473137,
+        3312.6816815419947
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0021_0",
+      "left_pixels": 823522,
+      "right_pixels": 713122,
+      "chest_center": [
+        1823.3496085255565,
+        2021.4029975088056
+      ],
+      "seed_centroid_columns": [
+        1204.237206777718,
+        2776.2471877182306
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0022_0",
+      "left_pixels": 1593839,
+      "right_pixels": 2087801,
+      "chest_center": [
+        2008.409485355338,
+        2449.554589999544
+      ],
+      "seed_centroid_columns": [
+        1460.958933116833,
+        3615.4835149518563
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0023_0",
+      "left_pixels": 1295178,
+      "right_pixels": 2064918,
+      "chest_center": [
+        1971.7977004372303,
+        2380.8117543014437
+      ],
+      "seed_centroid_columns": [
+        1383.9813199421237,
+        3535.1431185160864
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0024_0",
+      "left_pixels": 426349,
+      "right_pixels": 812250,
+      "chest_center": [
+        1962.8354724011158,
+        2058.783545134964
+      ],
+      "seed_centroid_columns": [
+        1431.1321992076914,
+        2729.5834915358573
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0026_0",
+      "left_pixels": 105835,
+      "right_pixels": 417914,
+      "chest_center": [
+        1512.074904313791,
+        2000.061444892685
+      ],
+      "seed_centroid_columns": [
+        1362.39811026598,
+        2659.7006441516673
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0027_0",
+      "left_pixels": 580476,
+      "right_pixels": 926809,
+      "chest_center": [
+        1747.3391649592113,
+        1987.7422277588919
+      ],
+      "seed_centroid_columns": [
+        1239.463314590095,
+        2651.1823460928845
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0028_0",
+      "left_pixels": 683891,
+      "right_pixels": 711010,
+      "chest_center": [
+        1684.4575398846764,
+        2003.3811611243536
+      ],
+      "seed_centroid_columns": [
+        1287.813319666438,
+        2696.7543860142614
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0029_0",
+      "left_pixels": 944205,
+      "right_pixels": 1074325,
+      "chest_center": [
+        1977.3171969785317,
+        2010.9317556377398
+      ],
+      "seed_centroid_columns": [
+        1323.1790183275878,
+        2749.500013496847
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0030_0",
+      "left_pixels": 764276,
+      "right_pixels": 1897598,
+      "chest_center": [
+        1943.5876615144175,
+        2317.713137648241
+      ],
+      "seed_centroid_columns": [
+        1435.0842980807981,
+        3341.466718451432
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0031_0",
+      "left_pixels": 943091,
+      "right_pixels": 2012777,
+      "chest_center": [
+        1982.5948951161467,
+        2373.5104845634187
+      ],
+      "seed_centroid_columns": [
+        1513.4354266979537,
+        3406.053559833007
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0035_0",
+      "left_pixels": 777919,
+      "right_pixels": 877985,
+      "chest_center": [
+        1842.0332286044659,
+        2038.9308092862318
+      ],
+      "seed_centroid_columns": [
+        1256.4782824432878,
+        2790.880751949065
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0038_0",
+      "left_pixels": 941763,
+      "right_pixels": 994891,
+      "chest_center": [
+        1859.6062389178155,
+        2113.8984652279896
+      ],
+      "seed_centroid_columns": [
+        1431.5981812834013,
+        3029.64267241336
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0040_0",
+      "left_pixels": 1305025,
+      "right_pixels": 1478769,
+      "chest_center": [
+        1962.2399962952998,
+        1852.8996560307517
+      ],
+      "seed_centroid_columns": [
+        978.1376088580679,
+        2529.3896511219805
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0041_0",
+      "left_pixels": 1243196,
+      "right_pixels": 1183033,
+      "chest_center": [
+        1726.5985930085135,
+        2500.201867766766
+      ],
+      "seed_centroid_columns": [
+        1821.2170100289898,
+        3249.0297159927068
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0042_0",
+      "left_pixels": 1041683,
+      "right_pixels": 880703,
+      "chest_center": [
+        1335.539002342449,
+        2568.5283113011246
+      ],
+      "seed_centroid_columns": [
+        1936.1743083068457,
+        3313.330132859772
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0043_0",
+      "left_pixels": 784263,
+      "right_pixels": 797523,
+      "chest_center": [
+        2059.7457702021043,
+        2537.854878871571
+      ],
+      "seed_centroid_columns": [
+        1854.4190953799937,
+        3475.237259615083
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0044_0",
+      "left_pixels": 803487,
+      "right_pixels": 894995,
+      "chest_center": [
+        2236.672000972341,
+        2008.5907084377397
+      ],
+      "seed_centroid_columns": [
+        1231.6765933985241,
+        2738.8687288755805
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0045_0",
+      "left_pixels": 862007,
+      "right_pixels": 942471,
+      "chest_center": [
+        2106.1026518741082,
+        2452.083916397105
+      ],
+      "seed_centroid_columns": [
+        1650.0904203794169,
+        3322.795604320982
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0046_0",
+      "left_pixels": 866679,
+      "right_pixels": 1279804,
+      "chest_center": [
+        2345.7024699620065,
+        1884.1515848258803
+      ],
+      "seed_centroid_columns": [
+        1091.4819731411515,
+        2569.4174193860936
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0047_0",
+      "left_pixels": 799511,
+      "right_pixels": 1091283,
+      "chest_center": [
+        2054.8947769764495,
+        1981.5077596672995
+      ],
+      "seed_centroid_columns": [
+        1070.936307317848,
+        2676.5823686431477
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0048_0",
+      "left_pixels": 786749,
+      "right_pixels": 902877,
+      "chest_center": [
+        1677.366103083761,
+        2037.7496935677782
+      ],
+      "seed_centroid_columns": [
+        1297.4471019346704,
+        2752.48425533046
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0049_0",
+      "left_pixels": 635334,
+      "right_pixels": 865082,
+      "chest_center": [
+        1657.4011128958928,
+        1969.3570140916554
+      ],
+      "seed_centroid_columns": [
+        1182.6116562312106,
+        2601.4361840842835
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0051_0",
+      "left_pixels": 1603210,
+      "right_pixels": 1717048,
+      "chest_center": [
+        2434.6360940526024,
+        1972.6135092115417
+      ],
+      "seed_centroid_columns": [
+        946.4587421485644,
+        2936.6675299700414
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0052_0",
+      "left_pixels": 683608,
+      "right_pixels": 529859,
+      "chest_center": [
+        1671.6837547156183,
+        2003.76474485712
+      ],
+      "seed_centroid_columns": [
+        1247.0744052146845,
+        2512.4164315412213
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0053_0",
+      "left_pixels": 616528,
+      "right_pixels": 520463,
+      "chest_center": [
+        1734.7566026612155,
+        1995.3487562633552
+      ],
+      "seed_centroid_columns": [
+        1298.0834885033607,
+        2534.613980244513
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0054_0",
+      "left_pixels": 885161,
+      "right_pixels": 1018116,
+      "chest_center": [
+        2228.212355166492,
+        1954.8526803002921
+      ],
+      "seed_centroid_columns": [
+        1224.2828457195922,
+        2534.6785533279117
+      ],
+      "sources": [
+        "cleaned",
+        "cleaned"
+      ],
+      "verified": true
+    },
+    {
+      "patient_id": "MCUCXR_0309_1",
+      "left_pixels": 394880,
+      "right_pixels": 744498,
+      "chest_center": [
+        1816.7849559627584,
+        2080.688056237678
+      ],
+      "seed_centroid_columns": [
+        1273.202048723663,
+        2793.916651220017
+      ],
+      "sources": [
+        "cleaned",
+        "fallback: threshold=55, opening_radius=100"
+      ],
+      "verified": true
+    }
+  ]
+}

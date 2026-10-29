@@ -7,8 +7,8 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
-from mtgp import SegmentationConfig
-from mtgp.plotting import plot_segmentation_batch
+from mtgp import GrowthConfig, SegmentationConfig, grow_lungs, segment_lungs, grow_competitive
+from mtgp.plotting import plot_lung_growth, plot_segmentation_batch, plot_competitive_growth
 
 
 class PlottingTests(unittest.TestCase):
@@ -34,6 +34,37 @@ class PlottingTests(unittest.TestCase):
         self.assertEqual(plt.get_fignums(), [])
         with self.assertRaises(ValueError):
             plot_segmentation_batch([], stages=('cleaned',))
+
+    def test_growth_plot_shows_the_same_seed_centre_and_labels(self):
+        image = np.full((50, 80), 150, dtype=np.float32)
+        image[15:35, 10:25] = 40
+        image[15:35, 55:70] = 40
+        segmentation = segment_lungs(image, SegmentationConfig(
+            sigma=0, opening_radius=0, closing_radius=0,
+        ))
+        growth = grow_lungs(segmentation, GrowthConfig(
+            connection_radius=0, boundary_margin=0,
+        ))
+        fig = plot_lung_growth(image, segmentation, growth, display_max_size=40)
+        self.assertEqual(len(fig.axes), 4)
+        cy, cx = growth.seeds.chest_center
+        cross = fig.axes[1].lines[0]
+        self.assertEqual(list(cross.get_xdata()), [cx])
+        self.assertEqual(list(cross.get_ydata()), [cy])
+        np.testing.assert_array_equal(
+            fig.axes[2].images[0].get_array(), growth.labels[::2, ::2],
+        )
+        detailed = plot_lung_growth(image, segmentation, growth, show_growth_image=True)
+        self.assertEqual(len(detailed.axes), 5)
+        np.testing.assert_array_equal(detailed.axes[2].images[0].get_array(), growth.growth_image)
+        with self.assertRaises(ValueError):
+            plot_lung_growth(image[:2], segmentation, growth)
+
+        competing = grow_competitive(segmentation)
+        marked = plot_competitive_growth(image, competing, display_max_size=40)
+        self.assertEqual(len(marked.axes), 4)
+        np.testing.assert_array_equal(marked.axes[1].images[0].get_array(), competing.markers + 1)
+        np.testing.assert_array_equal(marked.axes[2].images[0].get_array(), competing.labels[::2, ::2])
 
 
 if __name__ == '__main__':

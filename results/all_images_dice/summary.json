@@ -1,0 +1,29 @@
+{
+  "images_evaluated": 137,
+  "segmentation_failures": 0,
+  "mean_per_image_dice": 0.8958839787548666,
+  "median_per_image_dice": 0.9286921905188315,
+  "minimum_per_image_dice": 0.0,
+  "maximum_per_image_dice": 0.9665568526860688,
+  "pooled_pixel_dice": 0.9066983618833816,
+  "excluded_patient_ids": [
+    "MCUCXR_0354_1"
+  ],
+  "segmentation_config": {
+    "sigma": 30.0,
+    "threshold": 65.0,
+    "min_valid_intensity": 10.0,
+    "opening_radius": 100.0,
+    "closing_radius": 100.0,
+    "max_invalid_contacts": 100
+  },
+  "growth_config": {
+    "method": "watershed",
+    "working_max_size": 384,
+    "blur_sigma": 0,
+    "background_threshold": 190,
+    "boundary_margin": 100,
+    "beta": 130
+  },
+  "scope": "All available Trial patients, including tuning cases; not a held-out test."
+}

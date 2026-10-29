@@ -7,8 +7,13 @@ from typing import TYPE_CHECKING, Literal
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.figure import Figure
+from matplotlib.colors import ListedColormap
+from matplotlib.lines import Line2D
+from numpy.typing import ArrayLike
 
-from .thresholding import SegmentationConfig, segment_lungs
+from .thresholding import SegmentationConfig, SegmentationResult, segment_lungs
+from .region_growing import LungGrowthResult
+from .competitive_growing import CompetitiveGrowthResult
 
 if TYPE_CHECKING:
     from .data_loader import Patient
@@ -94,3 +99,102 @@ def plot_segmentation_batch(
             plt.close(fig)
         raise
     return figures
+
+
+def plot_lung_growth(
+    image: ArrayLike,
+    segmentation: SegmentationResult,
+    growth: LungGrowthResult,
+    *,
+    title: str = "Seeded lung growth",
+    display_max_size: int = 800,
+    show_growth_image: bool = False,
+) -> Figure:
+    """Show candidate blobs, chosen seeds, grown labels and an X-ray overlay.
+
+    Cyan is image-left and orange is image-right. The cross and dashed vertical
+    line show the centroid of valid chest pixels. Only plot data is downsampled.
+    """
+    image = np.asarray(image)
+    if image.ndim != 2 or image.shape != growth.labels.shape or image.shape != segmentation.valid.shape:
+        raise ValueError("image, segmentation and growth must have matching 2-D shapes")
+    if not isinstance(display_max_size, int) or isinstance(display_max_size, bool) or display_max_size < 1:
+        raise ValueError("display_max_size must be a positive integer")
+    step = max(1, int(np.ceil(max(image.shape) / display_max_size)))
+    sample = np.s_[::step, ::step]
+    height, width = image.shape
+    extent = (-0.5, width - 0.5, height - 0.5, -0.5)
+    gray = plt.colormaps["gray"].with_extremes(bad="red")
+    colors = ("#24cce0", "#ffad42")
+    label_cmap = ListedColormap(["black", *colors]).with_extremes(bad="red")
+    count = 5 if show_growth_image else 4
+    fig, axes = plt.subplots(1, count, figsize=(4 * count, 5), layout="constrained")
+    fig.suptitle(title)
+    panels = [
+        (segmentation.cleaned, segmentation.mask_valid, gray, 1, "Candidate blobs"),
+        (growth.seeds.labels, growth.mask_valid, label_cmap, 2, "Selected seeds"),
+        (growth.labels, growth.mask_valid, label_cmap, 2, "Grown regions"),
+    ]
+    if show_growth_image:
+        panels.insert(2, (growth.growth_image, segmentation.valid, gray, None,
+                          f"Growth image (extra σ={growth.config.blur_sigma:g})"))
+    for ax, (pixels, valid, cmap, vmax, panel_title) in zip(axes, panels):
+        display = np.where(valid[sample], pixels[sample], np.nan).astype(np.float32)
+        ax.imshow(display, cmap=cmap, vmin=0, vmax=vmax, extent=extent, interpolation="nearest")
+        ax.set_title(panel_title)
+    cy, cx = growth.seeds.chest_center
+    axes[1].plot(cx, cy, marker="+", color="magenta", markersize=12)
+    axes[1].axvline(cx, color="magenta", linestyle="--", linewidth=0.8)
+    axes[-1].imshow(image[sample], cmap="gray", extent=extent, interpolation="nearest")
+    rows, columns = np.arange(height)[::step], np.arange(width)[::step]
+    for side, color in enumerate(colors, start=1):
+        mask = growth.labels[sample] == side
+        if min(mask.shape) >= 2 and mask.any() and not mask.all():
+            axes[-1].contour(columns, rows, mask, levels=[0.5], colors=[color], linewidths=1)
+    axes[-1].set_title("Grown contours on X-ray")
+    axes[-1].legend(
+        handles=[Line2D([0], [0], color=color, label=side)
+                 for color, side in zip(colors, ("Image-left", "Image-right"))],
+        loc="lower center", fontsize=8,
+    )
+    for ax in axes:
+        ax.set_axis_off()
+    return fig
+
+
+def plot_competitive_growth(
+    image: ArrayLike, growth: CompetitiveGrowthResult, *,
+    title: str = "Lung/background competition", display_max_size: int = 800,
+) -> Figure:
+    """Show working intensities, automatic markers, native labels and contours.
+
+    Markers are diagnostic inputs, not reference annotations. Cyan/orange mark
+    the two lungs; gray marks background; black is undecided; red is invalid.
+    """
+    image = np.asarray(image)
+    if image.ndim != 2 or image.shape != growth.labels.shape:
+        raise ValueError('image and growth must have matching 2-D shapes')
+    if not isinstance(display_max_size, int) or isinstance(display_max_size, bool) or display_max_size < 1:
+        raise ValueError('display_max_size must be a positive integer')
+    step = max(1, int(np.ceil(max(image.shape) / display_max_size)))
+    sample = np.s_[::step, ::step]
+    colors = ('#24cce0', '#ffad42')
+    marker_colors = ListedColormap(['red', 'black', *colors, '#aaaaaa'])
+    label_colors = ListedColormap(['black', *colors])
+    fig, axes = plt.subplots(1, 4, figsize=(16, 5), layout='constrained')
+    fig.suptitle(title)
+    axes[0].imshow(growth.working_image, cmap=plt.colormaps['gray'].with_extremes(bad='red'))
+    axes[0].set_title('Working image')
+    axes[1].imshow(growth.markers + 1, cmap=marker_colors, vmin=0, vmax=4, interpolation='nearest')
+    axes[1].set_title('Seeds + automatic background (gray)')
+    axes[2].imshow(growth.labels[sample], cmap=label_colors, vmin=0, vmax=2, interpolation='nearest')
+    axes[2].set_title(f'{growth.config.method.replace("_", " ").title()} regions')
+    axes[3].imshow(image[sample], cmap='gray')
+    for side, color in enumerate(colors, 1):
+        mask = growth.labels[sample] == side
+        if min(mask.shape) >= 2 and mask.any() and not mask.all():
+            axes[3].contour(mask, levels=[.5], colors=[color], linewidths=1)
+    axes[3].set_title('Contours on X-ray')
+    for ax in axes:
+        ax.axis('off')
+    return fig

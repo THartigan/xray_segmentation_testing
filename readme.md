@@ -116,6 +116,162 @@ filled holes for display and boundary checks. Contact tolerance counts distinct
 invalid pixels in an 8-neighbourhood and is inclusive. Image-edge contact always
 rejects a component. The notebook shows each stage with invalid pixels in red.
 
+## Central seeds and region growth
+
+```python
+from mtgp import GrowthConfig, grow_lungs
+from mtgp.plotting import plot_lung_growth
+
+growth = grow_lungs(result, GrowthConfig(
+    intensity_threshold=100,
+    connection_radius=100,
+    max_distance=800,
+    boundary_margin=30,
+))
+left_mask = growth.left_mask    # Image-left, not anatomical left.
+right_mask = growth.right_mask
+lung_mask = growth.mask
+fig = plot_lung_growth(trial[0].image, result, growth)
+```
+
+`seeding.py` computes the centroid of the original valid chest pixels,
+then selects the closest cleaned-blob centroid on each side. Distance is
+Euclidean; ties prefer the larger blob, then the smaller connected-component ID.
+`min_seed_area` can exclude tiny candidates; its default of 1 applies the requested
+nearest-blob rule without a size preference. `find_lung_seeds(result)` preserves
+existing seeds and recovers missing sides by retrying image thresholds and
+opening radii, followed by the same repair and boundary rejection. It first tries
+darker interiors to break connections to boundary tissue. Recovery uses no manual
+annotations and still raises if no usable blob exists. `growth.seeds.sources`
+records how each seed was found. `select_lung_seeds(result.cleaned, result.valid)`
+exposes strict selection without recovery.
+The complete chosen blobs are retained, rather than reduced to seed points.
+
+`python scripts/verify_seeds.py` checks the first 40 patients at full resolution,
+plus the previously failing `MCUCXR_0309_1`. All 41 have nonempty, connected seeds
+on both image sides. The first 40 retain their original seed pairs; the extra
+case recovers its missing image-right seed at threshold 55. See the
+[verification record](results/growth_tuning/seed_verification.json) and overlays
+for [patients 1–20](results/growth_tuning/seeds_first40_page1.png) and
+[patients 21–40](results/growth_tuning/seeds_first40_page2.png).
+
+The region grower uses [SciPy binary propagation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.binary_propagation.html)
+to expand through 8-connected admissible pixels until no further growth is
+possible. It opens the more permissive intensity mask first to block narrow
+routes back to border strips. New growth is restricted to its image half, a
+distance from its seed, and clearance from invalid regions and image edges.
+Labels remain distinct: 0 background, 1 image-left, 2 image-right.
+The centre is exposed as `growth.seeds.chest_center` in `(row, column)` order.
+
+Seed pixels are never removed, including holes filled by the earlier pipeline.
+New invalid pixels are never admitted. Optional final hole filling admits bright
+enclosed valid pixels while respecting the same spatial limits. `admissible`
+exposes the opened intensity mask before per-side spatial constraints.
+
+The threshold-growth diagnostic plot shows the candidates, the two seeds and chest centre,
+the grown labels, and their outlines on the X-ray. All computation remains at
+the original resolution; only plot previews are reduced. Increase
+`intensity_threshold` to include brighter tissue or `max_distance` to reach
+farther from a small seed. `None` disables the distance limit, and zero disables
+the connection opening or boundary margin. These controls can also allow
+leakage into surrounding tissue. Complete anatomical lung coverage is not
+guaranteed by intensity-based growth. Manual annotations are used only for
+external comparisons, never by the algorithm.
+
+## Growth tuning
+
+`python scripts/tune_growth.py --phase all` runs a reproducible search using
+20 tuning patients and 5 separate evaluation patients. It screens thousands of
+configurations at reduced resolution, then selects the winner using full-resolution
+Dice on the tuning set. The evaluation scores never select growth parameters.
+Use `--phase prepare`, `search`, `native`, or `evaluate` to resume a stage.
+The preprocessing cache is under `data/.cache/growth_tuning/` (ignored by Git).
+
+The previous selected settings are saved in `results/growth_tuning/best_config.json`;
+library defaults remain available for comparison. See the [tuning report](results/growth_tuning/report.md)
+for scores, search ranges, split details, and limitations, and
+[patient scores](results/growth_tuning/patient_scores.csv) for individual results.
+The seed-recovery change was prompted by a missing side in an evaluation image,
+without using its manual annotation or Dice. Thus evaluation is held out from
+growth-parameter selection, but was not untouched during seed-development work.
+
+This run tested **2,570 distinct configurations**. Mean full-resolution Dice:
+
+| Split | Baseline | Tuned |
+|---|---:|---:|
+| Tuning (20) | 0.8152 | 0.8839 |
+| Evaluation (5) | 0.7747 | 0.8359 |
+
+Both comparisons use the improved seeds. Every evaluation patient improved,
+but the recovered `MCUCXR_0309_1` remains difficult (Dice 0.6883). These are the
+best settings found in this search; five evaluation cases give a limited estimate.
+
+## Additional blur and alternative growing methods
+
+`GrowthConfig(blur_sigma=60)` applies an additional normalized Gaussian blur to
+the seed-preprocessing intensities before threshold growth. Invalid pixels stay
+invalid and never darken the intensity average; seed selection is unchanged.
+`blur_sigma=0` disables the extra blur. `growth.growth_image` exposes the exact
+intensity field used for growth, and `plot_lung_growth(..., show_growth_image=True)`
+displays it. Sigma is in original pixels, additional to the initial sigma 30.
+
+Testing extra sigma 0/60/120/180/240 showed that stronger blur alone does not solve
+leakage. Lowering the threshold helps more; extra blur weakens useful boundaries.
+See the [blur experiment](results/growth_blur/report.md), reproduced with
+`python scripts/tune_growth_blur.py --phase all`.
+
+**Marker-controlled watershed is now recommended.** Both lungs and automatic
+background markers compete across image gradients, so a dark connection does not
+automatically admit the whole shoulder. `competitive_growing.py` also implements
+random walker for comparison. Background markers use only image intensities,
+valid-image boundaries and the chest centre; no manual annotations are used.
+
+```python
+from mtgp import CompetitiveGrowthConfig, grow_competitive
+from mtgp.plotting import plot_competitive_growth
+
+growth = grow_competitive(result, CompetitiveGrowthConfig(
+    method="watershed", working_max_size=384,
+    background_threshold=190, boundary_margin=100, blur_sigma=0,
+))
+lung_mask = growth.mask  # Original image shape; the original seeds are retained.
+fig = plot_competitive_growth(patient.image, growth)
+```
+
+The working grid has a longest side of at most 384 pixels. Masks are restored by
+nearest-neighbour sampling, and only valid additions connected to each original
+seed are retained. This grid is part of inference, not just plot reduction.
+`growth.markers`, `working_image`, and `stride` expose that computation; returned
+lung masks have the original image dimensions. `beta` affects random walker only.
+
+| Method | Tuning Dice (20) | Evaluation Dice (5) |
+|---|---:|---:|
+| Previous tuned threshold growth | 0.8839 | 0.8359 |
+| Lower cutoff + extra blur | 0.8754 | 0.8242 |
+| Random walker | 0.8123 | 0.7840 |
+| **Watershed** | **0.9284** | **0.8928** |
+
+Watershed reduces evaluation false-positive/reference area by about 83%, with
+higher Dice on four of five patients. Some lung bases remain under-segmented.
+All final scores use restored masks against full-resolution manual masks.
+These five cases were inspected in earlier experiments, so they are a repeated
+comparison rather than a fresh untouched test set. Settings were selected on the
+20 tuning patients. See the [method assessment](results/growth_methods/report.md)
+and run `python scripts/compare_growth_methods.py --phase all` to reproduce it.
+
+The notebook preserves the existing sigma-5 / first-40 baseline experiment and
+adds separate blur and recommended watershed sections. The new sections load
+the saved sigma-30 preprocessing so their settings match the measured experiment.
+The watershed section inspects the first 40 patients. Restart the kernel
+after updating the source to load the new functions.
+
+The final **Dice score over all images** section uses `mtgp.evaluation.evaluate_lung_dice`
+to score every patient in `trial` with the saved watershed settings. It reports
+mean per-image and pooled-pixel Dice, keeps segmentation failures at Dice zero,
+and lists the loader's excluded patients. Per-image scores and the configuration
+summary are saved to `results/all_images_dice/`. This includes tuning patients,
+so the result describes the available dataset rather than held-out performance.
+
 ### Local dataset exception
 
 `MCUCXR_0354_1` has a 1024 × 1024 image but 4020 × 4892 masks.

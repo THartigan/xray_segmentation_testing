@@ -1,0 +1,143 @@
+[
+  {
+    "config": {
+      "intensity_threshold": 148.2,
+      "connection_radius": 235,
+      "max_distance": null,
+      "boundary_margin": 265,
+      "min_seed_area": 1,
+      "fill_holes": true,
+      "blur_sigma": 0.0
+    },
+    "per_patient": {
+      "MCUCXR_0029_0": {
+        "dice": 0.855441908883528,
+        "precision": 0.8231806708279816,
+        "recall": 0.8903349889137451,
+        "false_positive_fraction": 0.19124408657428532
+      },
+      "MCUCXR_0081_0": {
+        "dice": 0.8795213521754788,
+        "precision": 0.8720755555648981,
+        "recall": 0.8870953883859389,
+        "false_positive_fraction": 0.13012769822071585
+      },
+      "MCUCXR_0102_0": {
+        "dice": 0.86955152835775,
+        "precision": 0.8458197459246176,
+        "recall": 0.8946534743803396,
+        "false_positive_fraction": 0.16308191036447842
+      },
+      "MCUCXR_0309_1": {
+        "dice": 0.6883222105495855,
+        "precision": 0.5999629478778066,
+        "recall": 0.8072025954324225,
+        "false_positive_fraction": 0.5382181481112672
+      },
+      "MCUCXR_0352_1": {
+        "dice": 0.8866072744709006,
+        "precision": 0.9083900523957845,
+        "recall": 0.8658447142919192,
+        "false_positive_fraction": 0.08731930595284633
+      }
+    },
+    "mean_dice": 0.8358888548874486,
+    "mean_precision": 0.8098857945182176,
+    "mean_recall": 0.869026232280873,
+    "mean_false_positive_fraction": 0.22199822984471865
+  },
+  {
+    "config": {
+      "intensity_threshold": 130,
+      "connection_radius": 235,
+      "max_distance": null,
+      "boundary_margin": 265,
+      "min_seed_area": 1,
+      "fill_holes": true,
+      "blur_sigma": 0
+    },
+    "per_patient": {
+      "MCUCXR_0029_0": {
+        "dice": 0.8589105636475544,
+        "precision": 0.8695494815190958,
+        "recall": 0.8485288329272086,
+        "false_positive_fraction": 0.12729698372998224
+      },
+      "MCUCXR_0081_0": {
+        "dice": 0.8734170618477477,
+        "precision": 0.9167139927534467,
+        "recall": 0.834025553640173,
+        "false_positive_fraction": 0.07577353335215022
+      },
+      "MCUCXR_0102_0": {
+        "dice": 0.877849918647084,
+        "precision": 0.9242190080607693,
+        "recall": 0.8359113234021381,
+        "false_positive_fraction": 0.06854023635973948
+      },
+      "MCUCXR_0309_1": {
+        "dice": 0.6870133052311723,
+        "precision": 0.632466450305707,
+        "recall": 0.7518569537107725,
+        "false_positive_fraction": 0.4369127483775474
+      },
+      "MCUCXR_0352_1": {
+        "dice": 0.873699840146702,
+        "precision": 0.9476786876935475,
+        "recall": 0.8104346998756936,
+        "false_positive_fraction": 0.04474407579997642
+      }
+    },
+    "mean_dice": 0.834178137904052,
+    "mean_precision": 0.8581255240665133,
+    "mean_recall": 0.8161514727111971,
+    "mean_false_positive_fraction": 0.15065351552387915
+  },
+  {
+    "config": {
+      "intensity_threshold": 130,
+      "connection_radius": 235,
+      "max_distance": null,
+      "boundary_margin": 265,
+      "min_seed_area": 1,
+      "fill_holes": true,
+      "blur_sigma": 60
+    },
+    "per_patient": {
+      "MCUCXR_0029_0": {
+        "dice": 0.8537641856821898,
+        "precision": 0.8591059908700407,
+        "recall": 0.8484883992471084,
+        "false_positive_fraction": 0.13915271635938445
+      },
+      "MCUCXR_0081_0": {
+        "dice": 0.8663846243429163,
+        "precision": 0.8958812083139895,
+        "recall": 0.8387684582362359,
+        "false_positive_fraction": 0.09748118117160766
+      },
+      "MCUCXR_0102_0": {
+        "dice": 0.8546893049179842,
+        "precision": 0.8724708302226155,
+        "recall": 0.8376181009962645,
+        "false_positive_fraction": 0.12243474201115367
+      },
+      "MCUCXR_0309_1": {
+        "dice": 0.6756360221323509,
+        "precision": 0.6015330138035062,
+        "recall": 0.7705617208139862,
+        "false_positive_fraction": 0.5104348381973104
+      },
+      "MCUCXR_0352_1": {
+        "dice": 0.8705239698870888,
+        "precision": 0.9378757510243738,
+        "recall": 0.8121975333155458,
+        "false_positive_fraction": 0.05379940970003082
+      }
+    },
+    "mean_dice": 0.8241996213925059,
+    "mean_precision": 0.8333733588469052,
+    "mean_recall": 0.8215268425218282,
+    "mean_false_positive_fraction": 0.18466057748789738
+  }
+]

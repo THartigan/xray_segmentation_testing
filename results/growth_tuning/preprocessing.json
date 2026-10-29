@@ -1,0 +1,252 @@
+[
+  {
+    "patient_id": "MCUCXR_0001_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0003_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0005_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0011_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0017_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0021_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0022_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0042_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0068_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0079_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0084_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0101_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0166_1",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0188_1",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0196_1",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0289_1",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0313_1",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0334_1",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0375_1",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0387_1",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0029_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0081_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0102_0",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  },
+  {
+    "patient_id": "MCUCXR_0309_1",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "fallback: threshold=55, opening_radius=100"
+    ],
+    "seeds_changed": true
+  },
+  {
+    "patient_id": "MCUCXR_0352_1",
+    "seed_error": "",
+    "cached": false,
+    "seed_sources": [
+      "cleaned",
+      "cleaned"
+    ],
+    "seeds_changed": false
+  }
+]

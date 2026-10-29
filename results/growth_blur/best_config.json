@@ -1,0 +1,50 @@
+{
+  "growth_config": {
+    "intensity_threshold": 130,
+    "connection_radius": 235,
+    "max_distance": null,
+    "boundary_margin": 265,
+    "min_seed_area": 1,
+    "fill_holes": true,
+    "blur_sigma": 60
+  },
+  "segmentation_config": {
+    "sigma": 30.0,
+    "threshold": 65.0,
+    "min_valid_intensity": 10.0,
+    "opening_radius": 100.0,
+    "closing_radius": 100.0,
+    "max_invalid_contacts": 100
+  },
+  "selection": "Highest native mean tuning Dice among tested blurred candidates with less false-positive area than the previous winner.",
+  "tuning_patient_ids": [
+    "MCUCXR_0001_0",
+    "MCUCXR_0003_0",
+    "MCUCXR_0005_0",
+    "MCUCXR_0011_0",
+    "MCUCXR_0017_0",
+    "MCUCXR_0021_0",
+    "MCUCXR_0022_0",
+    "MCUCXR_0042_0",
+    "MCUCXR_0068_0",
+    "MCUCXR_0079_0",
+    "MCUCXR_0084_0",
+    "MCUCXR_0101_0",
+    "MCUCXR_0166_1",
+    "MCUCXR_0188_1",
+    "MCUCXR_0196_1",
+    "MCUCXR_0289_1",
+    "MCUCXR_0313_1",
+    "MCUCXR_0334_1",
+    "MCUCXR_0375_1",
+    "MCUCXR_0387_1"
+  ],
+  "evaluation_patient_ids": [
+    "MCUCXR_0029_0",
+    "MCUCXR_0081_0",
+    "MCUCXR_0102_0",
+    "MCUCXR_0309_1",
+    "MCUCXR_0352_1"
+  ],
+  "tuning_mean_dice": 0.8754249907679765
+}

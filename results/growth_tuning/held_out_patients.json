@@ -1,0 +1,42 @@
+[
+  {
+    "patient_id": "MCUCXR_0029_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8049634428967547,
+      "{\"boundary_margin\": 265, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.855441908883528
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0081_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8173472842106456,
+      "{\"boundary_margin\": 265, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8795213521754788
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0102_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.83640760790651,
+      "{\"boundary_margin\": 265, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.86955152835775
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0309_1",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.5886611953570139,
+      "{\"boundary_margin\": 265, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.6883222105495855
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0352_1",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8261474916531387,
+      "{\"boundary_margin\": 265, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8866072744709006
+    },
+    "seed_error": ""
+  }
+]

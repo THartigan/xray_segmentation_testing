@@ -1,0 +1,23 @@
+[
+  {
+    "patient_id": "MCUCXR_0001_0",
+    "seed_dice": 0.6030539780032473,
+    "grown_dice": 0.8365116398848202,
+    "seed_pixels": 2052057,
+    "grown_pixels": 3420514
+  },
+  {
+    "patient_id": "MCUCXR_0022_0",
+    "seed_dice": 0.6389448167202606,
+    "grown_dice": 0.8755168939238854,
+    "seed_pixels": 3681640,
+    "grown_pixels": 6233613
+  },
+  {
+    "patient_id": "MCUCXR_0042_0",
+    "seed_dice": 0.8004868789902843,
+    "grown_dice": 0.8912646148510924,
+    "seed_pixels": 1922386,
+    "grown_pixels": 2496205
+  }
+]

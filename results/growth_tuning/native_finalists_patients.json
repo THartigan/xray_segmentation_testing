@@ -1,0 +1,262 @@
+[
+  {
+    "patient_id": "MCUCXR_0001_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8365116398848202,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8766443993259989,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8759747619267905,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8717319063525371,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8714003763206406,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8767091484902081,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8788853301860893
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0003_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.7207549855669793,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8273648499628379,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8226015703291661,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8192000363828376,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8194137288018786,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8184298546912476,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8398611535090743
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0005_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8742192814187828,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8906851620877936,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8924996191599661,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8924571462500246,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8907307567492628,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8962001151301803,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8841751528220627
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0011_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8194719664692325,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8844899025650906,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8898107093025001,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8884811898957824,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8903956275301398,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8911073615176303,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8967377797980719
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0017_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8963735808665009,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.9058993637190818,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.904775761311265,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.9047183811119174,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.9034987170013324,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.9137992452868907,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.9005426084706706
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0021_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.794545102055641,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8806578193661526,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8810945463337612,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8777655120593758,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8789932741199908,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8823661912440339,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.888577213013606
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0022_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8755168939238854,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.9237554081580501,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.9297383725524127,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.9298404057324569,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.9312072266871605,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.9309449029571245,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.9329206361041575
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0042_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8912646148510924,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.9059363798129816,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.9040728086289972,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.9054857197746469,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.9036151715135866,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8939349599641486,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8860644188225884
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0068_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.7712384260704306,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8685112303359548,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8669514341711768,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8631333224580039,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.862188606318145,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8675630477364518,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8661320544230066
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0079_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.7336174659426594,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8595750491715283,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8672972269143475,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8644289171341629,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8660715595909819,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8677101104005615,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8766155009714955
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0084_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.7482394691500852,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8131887535277366,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.805258632294079,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.7997658997910864,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.7989082145827615,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8044256082803919,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8120245450032684
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0101_0",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8437244042022539,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.88832248375838,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8879042569078917,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8861491747153729,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8867307139017225,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8890515127435207,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8922711721793861
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0166_1",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.7502524476685266,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.9010946896115569,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.9135463230098487,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.9074335328864489,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.9170724300098775,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.886158304270446,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.9136951317791909
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0188_1",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8466601403705605,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.9057061190713279,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.9134482025172475,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.9132199313975164,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.9153523237679081,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.9164020811778527,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.9175303692716708
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0196_1",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.7375553847095667,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8885246929681457,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8984601603391588,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8986702221485541,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8951551164982462,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.900054228198641,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.9011895286760144
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0289_1",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8472917602717772,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.855120370360579,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8364616213546879,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8313764113109933,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8200514532382756,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8242643565327731,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.81995817081806
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0313_1",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.7637170542912433,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8822985762177908,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8821195854346299,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8877896258583635,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8793232920929399,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8737179280435264,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8752357771235104
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0334_1",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8836015009733363,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8785611579367082,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8731944171556597,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8696101114073912,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8684659636238397,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8725370419129148,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8738461380480629
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0375_1",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8093418189572036,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.8894378559429692,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.8905410285072387,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.8876416765885945,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.8874990501842547,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.8919181348763415,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.8923452325101242
+    },
+    "seed_error": ""
+  },
+  {
+    "patient_id": "MCUCXR_0387_1",
+    "scores": {
+      "{\"boundary_margin\": 30.0, \"connection_radius\": 100.0, \"fill_holes\": true, \"intensity_threshold\": 100.0, \"max_distance\": 800.0, \"min_seed_area\": 1}": 0.8607698628464812,
+      "{\"boundary_margin\": 250, \"connection_radius\": 205, \"fill_holes\": false, \"intensity_threshold\": 134.1, \"max_distance\": 1760, \"min_seed_area\": 1}": 0.9213835595425108,
+      "{\"boundary_margin\": 230, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.2, \"max_distance\": 1980, \"min_seed_area\": 1}": 0.9234140492360107,
+      "{\"boundary_margin\": 210, \"connection_radius\": 250, \"fill_holes\": false, \"intensity_threshold\": 142.5, \"max_distance\": 1810, \"min_seed_area\": 1}": 0.924457526540313,
+      "{\"boundary_margin\": 210, \"connection_radius\": 255, \"fill_holes\": true, \"intensity_threshold\": 145.0, \"max_distance\": 2130, \"min_seed_area\": 1}": 0.9256247975801227,
+      "{\"boundary_margin\": 235, \"connection_radius\": 280, \"fill_holes\": true, \"intensity_threshold\": 145.5, \"max_distance\": 1520, \"min_seed_area\": 1}": 0.923077643161361,
+      "{\"boundary_margin\": 255, \"connection_radius\": 235, \"fill_holes\": true, \"intensity_threshold\": 148.2, \"max_distance\": null, \"min_seed_area\": 1}": 0.9113817680630042
+    },
+    "seed_error": ""
+  }
+]

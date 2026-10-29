@@ -1,0 +1,7 @@
+{
+  "phase": "complete",
+  "tuning_n": 20,
+  "evaluation_n": 5,
+  "summary": "summary.json",
+  "configuration": "best_config.json"
+}

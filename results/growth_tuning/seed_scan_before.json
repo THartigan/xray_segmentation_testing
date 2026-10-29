@@ -1,0 +1,326 @@
+[
+  {
+    "patient_id": "MCUCXR_0001_0",
+    "error": "",
+    "cached": true
+  },
+  {
+    "patient_id": "MCUCXR_0002_0",
+    "error": "",
+    "areas": [
+      943751,
+      879179
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0003_0",
+    "error": "",
+    "cached": true
+  },
+  {
+    "patient_id": "MCUCXR_0004_0",
+    "error": "",
+    "areas": [
+      359382,
+      569770
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0005_0",
+    "error": "",
+    "cached": true
+  },
+  {
+    "patient_id": "MCUCXR_0006_0",
+    "error": "",
+    "areas": [
+      876863,
+      756785
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0008_0",
+    "error": "",
+    "areas": [
+      775933,
+      968548
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0011_0",
+    "error": "",
+    "cached": true
+  },
+  {
+    "patient_id": "MCUCXR_0013_0",
+    "error": "",
+    "areas": [
+      1028375,
+      1080966
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0015_0",
+    "error": "",
+    "areas": [
+      570623,
+      1329968
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0016_0",
+    "error": "",
+    "areas": [
+      605150,
+      1061757
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0017_0",
+    "error": "",
+    "cached": true
+  },
+  {
+    "patient_id": "MCUCXR_0019_0",
+    "error": "",
+    "areas": [
+      1264214,
+      1707350
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0020_0",
+    "error": "",
+    "areas": [
+      1000364,
+      1203895
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0021_0",
+    "error": "",
+    "cached": true
+  },
+  {
+    "patient_id": "MCUCXR_0022_0",
+    "error": "",
+    "cached": true
+  },
+  {
+    "patient_id": "MCUCXR_0023_0",
+    "error": "",
+    "areas": [
+      1295178,
+      2064918
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0024_0",
+    "error": "",
+    "areas": [
+      426349,
+      812250
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0026_0",
+    "error": "",
+    "areas": [
+      105835,
+      417914
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0027_0",
+    "error": "",
+    "areas": [
+      580476,
+      926809
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0028_0",
+    "error": "",
+    "areas": [
+      683891,
+      711010
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0029_0",
+    "error": "",
+    "cached": true
+  },
+  {
+    "patient_id": "MCUCXR_0030_0",
+    "error": "",
+    "areas": [
+      764276,
+      1897598
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0031_0",
+    "error": "",
+    "areas": [
+      943091,
+      2012777
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0035_0",
+    "error": "",
+    "areas": [
+      777919,
+      877985
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0038_0",
+    "error": "",
+    "areas": [
+      941763,
+      994891
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0040_0",
+    "error": "",
+    "areas": [
+      1305025,
+      1478769
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0041_0",
+    "error": "",
+    "areas": [
+      1243196,
+      1183033
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0042_0",
+    "error": "",
+    "cached": true
+  },
+  {
+    "patient_id": "MCUCXR_0043_0",
+    "error": "",
+    "areas": [
+      784263,
+      797523
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0044_0",
+    "error": "",
+    "areas": [
+      803487,
+      894995
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0045_0",
+    "error": "",
+    "areas": [
+      862007,
+      942471
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0046_0",
+    "error": "",
+    "areas": [
+      866679,
+      1279804
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0047_0",
+    "error": "",
+    "areas": [
+      799511,
+      1091283
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0048_0",
+    "error": "",
+    "areas": [
+      786749,
+      902877
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0049_0",
+    "error": "",
+    "areas": [
+      635334,
+      865082
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0051_0",
+    "error": "",
+    "areas": [
+      1603210,
+      1717048
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0052_0",
+    "error": "",
+    "areas": [
+      683608,
+      529859
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0053_0",
+    "error": "",
+    "areas": [
+      616528,
+      520463
+    ],
+    "cached": false
+  },
+  {
+    "patient_id": "MCUCXR_0054_0",
+    "error": "",
+    "areas": [
+      885161,
+      1018116
+    ],
+    "cached": false
+  }
+]

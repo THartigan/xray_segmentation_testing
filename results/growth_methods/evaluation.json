@@ -1,0 +1,94 @@
+[
+  {
+    "config": {
+      "method": "watershed",
+      "working_max_size": 384,
+      "blur_sigma": 0,
+      "background_threshold": 190,
+      "boundary_margin": 100,
+      "beta": 130
+    },
+    "per_patient": {
+      "MCUCXR_0029_0": {
+        "dice": 0.930271612880515,
+        "precision": 0.9727448718921403,
+        "recall": 0.8913522260391249,
+        "false_positive_fraction": 0.024974605173365593
+      },
+      "MCUCXR_0081_0": {
+        "dice": 0.874850670034873,
+        "precision": 0.9070369932888596,
+        "recall": 0.8448703384473271,
+        "false_positive_fraction": 0.08659149243553467
+      },
+      "MCUCXR_0102_0": {
+        "dice": 0.9344690416840777,
+        "precision": 0.9868286655860077,
+        "recall": 0.8873857093702727,
+        "false_positive_fraction": 0.011844055954103191
+      },
+      "MCUCXR_0309_1": {
+        "dice": 0.8001040467170467,
+        "precision": 0.9420842362653012,
+        "recall": 0.6953142191881528,
+        "false_positive_fraction": 0.04274527955113477
+      },
+      "MCUCXR_0352_1": {
+        "dice": 0.9244378558032083,
+        "precision": 0.9745244481898003,
+        "recall": 0.8792480811114352,
+        "false_positive_fraction": 0.022984882612211804
+      }
+    },
+    "mean_dice": 0.8928266454239442,
+    "mean_precision": 0.9566438430444218,
+    "mean_recall": 0.8396341148312626,
+    "mean_false_positive_fraction": 0.03782806314527
+  },
+  {
+    "config": {
+      "method": "random_walker",
+      "working_max_size": 384,
+      "blur_sigma": 0,
+      "background_threshold": 190,
+      "boundary_margin": 100,
+      "beta": 2000
+    },
+    "per_patient": {
+      "MCUCXR_0029_0": {
+        "dice": 0.7964760137303603,
+        "precision": 0.9126813869029409,
+        "recall": 0.7065197658807405,
+        "false_positive_fraction": 0.06759459211906316
+      },
+      "MCUCXR_0081_0": {
+        "dice": 0.8123884449875058,
+        "precision": 0.9468819248726678,
+        "recall": 0.7113495749483507,
+        "false_positive_fraction": 0.03990520800044165
+      },
+      "MCUCXR_0102_0": {
+        "dice": 0.8124843658231232,
+        "precision": 0.9807543582705337,
+        "recall": 0.6934992999145797,
+        "false_positive_fraction": 0.013608748157211947
+      },
+      "MCUCXR_0309_1": {
+        "dice": 0.7192816860208031,
+        "precision": 0.8052219891827015,
+        "recall": 0.6499168950209545,
+        "false_positive_fraction": 0.1572107092321518
+      },
+      "MCUCXR_0352_1": {
+        "dice": 0.7791802225885034,
+        "precision": 0.9631581287256303,
+        "recall": 0.6542151430350188,
+        "false_positive_fraction": 0.0250244579437126
+      }
+    },
+    "mean_dice": 0.7839621466300593,
+    "mean_precision": 0.9217395575908949,
+    "mean_recall": 0.6831001357599289,
+    "mean_false_positive_fraction": 0.06066874309051623
+  }
+]

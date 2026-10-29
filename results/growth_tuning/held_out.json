@@ -1,0 +1,38 @@
+[
+  {
+    "config": {
+      "intensity_threshold": 148.2,
+      "connection_radius": 235,
+      "max_distance": null,
+      "boundary_margin": 265,
+      "min_seed_area": 1,
+      "fill_holes": true
+    },
+    "mean_dice": 0.8358888548874486,
+    "per_patient": {
+      "MCUCXR_0029_0": 0.855441908883528,
+      "MCUCXR_0081_0": 0.8795213521754788,
+      "MCUCXR_0102_0": 0.86955152835775,
+      "MCUCXR_0309_1": 0.6883222105495855,
+      "MCUCXR_0352_1": 0.8866072744709006
+    }
+  },
+  {
+    "config": {
+      "intensity_threshold": 100.0,
+      "connection_radius": 100.0,
+      "max_distance": 800.0,
+      "boundary_margin": 30.0,
+      "min_seed_area": 1,
+      "fill_holes": true
+    },
+    "mean_dice": 0.7747054044048125,
+    "per_patient": {
+      "MCUCXR_0029_0": 0.8049634428967547,
+      "MCUCXR_0081_0": 0.8173472842106456,
+      "MCUCXR_0102_0": 0.83640760790651,
+      "MCUCXR_0309_1": 0.5886611953570139,
+      "MCUCXR_0352_1": 0.8261474916531387
+    }
+  }
+]

@@ -1,0 +1,139 @@
+[
+  {
+    "config": {
+      "intensity_threshold": 130,
+      "connection_radius": 235,
+      "max_distance": null,
+      "boundary_margin": 265,
+      "min_seed_area": 1,
+      "fill_holes": true,
+      "blur_sigma": 0
+    },
+    "per_patient": {
+      "MCUCXR_0001_0": {
+        "dice": 0.8767110567299783,
+        "precision": 0.9005940474576903,
+        "recall": 0.8540620549982928,
+        "false_positive_fraction": 0.09426983483514123
+      },
+      "MCUCXR_0003_0": {
+        "dice": 0.8121987155584592,
+        "precision": 0.8703706965189719,
+        "recall": 0.761315531227211,
+        "false_positive_fraction": 0.11338709177247797
+      },
+      "MCUCXR_0005_0": {
+        "dice": 0.8952695628464519,
+        "precision": 0.8876026575284078,
+        "recall": 0.9030700720941196,
+        "false_positive_fraction": 0.11435598497603595
+      },
+      "MCUCXR_0011_0": {
+        "dice": 0.8761183874985328,
+        "precision": 0.9418044185567144,
+        "recall": 0.818997508949391,
+        "false_positive_fraction": 0.05060714867631742
+      },
+      "MCUCXR_0017_0": {
+        "dice": 0.9131885165686856,
+        "precision": 0.929003508741095,
+        "recall": 0.8979029678336592,
+        "false_positive_fraction": 0.0686197195245612
+      },
+      "MCUCXR_0021_0": {
+        "dice": 0.8770595292307529,
+        "precision": 0.935661442708165,
+        "recall": 0.8253656129994409,
+        "false_positive_fraction": 0.056754324112122244
+      },
+      "MCUCXR_0022_0": {
+        "dice": 0.9183602683048472,
+        "precision": 0.9697423643581801,
+        "recall": 0.872149177152856,
+        "false_positive_fraction": 0.027212559745257398
+      },
+      "MCUCXR_0042_0": {
+        "dice": 0.902306046224351,
+        "precision": 0.9481962803915933,
+        "recall": 0.8606526939805274,
+        "false_positive_fraction": 0.0470208666298227
+      },
+      "MCUCXR_0068_0": {
+        "dice": 0.872210823699316,
+        "precision": 0.885504689321409,
+        "recall": 0.8593102094063585,
+        "false_positive_fraction": 0.1111083776085514
+      },
+      "MCUCXR_0079_0": {
+        "dice": 0.8431668023652608,
+        "precision": 0.893297622746845,
+        "recall": 0.7983635702505666,
+        "false_positive_fraction": 0.09536271975750372
+      },
+      "MCUCXR_0084_0": {
+        "dice": 0.8153637338129345,
+        "precision": 0.844806781732091,
+        "recall": 0.78790385601602,
+        "false_positive_fraction": 0.14474000179084553
+      },
+      "MCUCXR_0101_0": {
+        "dice": 0.8837146583940546,
+        "precision": 0.929642342745791,
+        "recall": 0.8421113221287152,
+        "false_positive_fraction": 0.06373309072521714
+      },
+      "MCUCXR_0166_1": {
+        "dice": 0.9104647387910527,
+        "precision": 0.9534303944636545,
+        "recall": 0.8712045325070232,
+        "false_positive_fraction": 0.042553343858050194
+      },
+      "MCUCXR_0188_1": {
+        "dice": 0.8979551035528229,
+        "precision": 0.9623910478017548,
+        "recall": 0.84160619040727,
+        "false_positive_fraction": 0.03288884186638271
+      },
+      "MCUCXR_0196_1": {
+        "dice": 0.880887624661651,
+        "precision": 0.982297220393135,
+        "recall": 0.7984571586235627,
+        "false_positive_fraction": 0.01438964786949052
+      },
+      "MCUCXR_0289_1": {
+        "dice": 0.8678544545321585,
+        "precision": 0.8152674071230215,
+        "recall": 0.9276932884072489,
+        "false_positive_fraction": 0.2102073320541584
+      },
+      "MCUCXR_0313_1": {
+        "dice": 0.8650648634117121,
+        "precision": 0.9075690789431481,
+        "recall": 0.8263637404383969,
+        "false_positive_fraction": 0.08416060378087321
+      },
+      "MCUCXR_0334_1": {
+        "dice": 0.8799801378507046,
+        "precision": 0.8713810182588002,
+        "recall": 0.8887506677558531,
+        "false_positive_fraction": 0.13118280466676294
+      },
+      "MCUCXR_0375_1": {
+        "dice": 0.8910626349162676,
+        "precision": 0.9185126248234609,
+        "recall": 0.8652057353366864,
+        "false_positive_fraction": 0.07675816581598403
+      },
+      "MCUCXR_0387_1": {
+        "dice": 0.9082136305400133,
+        "precision": 0.9511521665974327,
+        "recall": 0.8689844499243667,
+        "false_positive_fraction": 0.044627988170575
+      }
+    },
+    "mean_dice": 0.8793575644745004,
+    "mean_precision": 0.9149113905605679,
+    "mean_recall": 0.8484735170218782,
+    "mean_false_positive_fraction": 0.08119702241180654
+  }
+]
